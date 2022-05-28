@@ -1,0 +1,46 @@
+.App {
+  padding-top: 6rem;
+  position: relative;
+  text-align: center;
+  background: linear-gradient(rgb(33, 4, 56), rgba(109, 0, 194, 0.25), rgba(109, 0, 194, 0.1));
+
+  background: linear-gradient(359.93deg, #6d00c200 -0.42%, #6e00c240 49.04%, #6d00c21a 100.61%);
+
+
+  /* /* background-image: */
+  /* -webkit-linear-gradient(left, red, #f06d06); */
+
+/* Firefox 3.6 - 15 */
+/* background-image:
+  -moz-linear-gradient(left, red, #f06d06); */
+
+/* Opera 11.1 - 12 */
+/* background-image:
+  -o-linear-gradient(left, red, #f06d06);  */
+  background-image: linear-gradient(
+  180deg,
+  hsl(270deg 43% 3%) 0%,
+  hsl(274deg 82% 18%) 22%,
+  hsl(274deg 83% 25%) 33%,
+  hsl(274deg 83% 30%) 42%,
+  hsl(274deg 83% 35%) 50%,
+  hsl(274deg 83% 30%) 58%,
+  hsl(274deg 83% 25%) 67%,
+  hsl(274deg 82% 18%) 78%,
+  hsl(278deg 50% 3%) 100%
+);
+
+background-image: linear-gradient(
+  180deg,
+  hsl(270deg 43% 3%) 0%,
+  hsl(274deg 82% 18%) 22%,
+  hsl(274deg 83% 25%) 33%,
+  hsl(274deg 83% 30%) 42%,
+  hsl(274deg 83% 35%) 50%,
+  hsl(274deg 83% 30%) 58%,
+  hsl(274deg 83% 25%) 67%,
+  hsl(274deg 82% 18%) 78%,
+  hsl(278deg 50% 3%) 100%
+);
+}
+

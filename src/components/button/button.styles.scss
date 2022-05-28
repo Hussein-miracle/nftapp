@@ -1,0 +1,36 @@
+.custom-btn{
+  height: 3.5rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 3rem;
+
+  cursor: pointer;
+  color: #fff;
+
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all .2s ease;
+  padding: 2px 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover{
+    transform: scale(0.98);
+  }
+
+  svg{
+    margin-right: 5px;
+  }
+
+
+  &:focus{
+    border: none;
+    outline: none;
+  }
+}

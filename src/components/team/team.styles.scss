@@ -1,0 +1,50 @@
+.team{
+  color: #fff;
+  // background-color: gold;
+  min-height: 80vh;
+
+  &__title{
+    font-size: 3.5rem;
+
+  }
+
+  &__card{
+    // height: 22rem;
+    // width: 25%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &--content{
+      background-color: #242424;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      // right: 0;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      height: 20%;
+      width: 100%;
+    }
+
+    &--name{
+      font-size: 2.5rem;
+    }
+
+    &--role{
+      font-size: 1.25rem;
+    }
+  }
+
+  &__content{
+    margin: 6.5rem 0 0 0;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
