@@ -1,7 +1,9 @@
-import React,{useEffect} from 'react';
+import React,{useEffect , useRef} from 'react';
 import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import './about.styles.scss';
 import PaintAboutTimeLine from '../paint-about/paint-about'; 
+import Rocket from '../../assets/icons/shuttle';
 import Button from '../button/button';
 import { ReactComponent as QM } from '../../assets/icons/question-mark.svg';
 
@@ -10,6 +12,8 @@ import img2 from '../../assets/images/timeline-image-2.png';
 import img3 from '../../assets/images/timeline-image-3.png';
 import img4 from '../../assets/images/timeline-image-4.png';
 import img5 from '../../assets/images/timeline-image-5.png';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const AboutImgContainer = ({srcUrl, title , i}) => {
   return (
@@ -31,15 +35,18 @@ const AboutCard = ({text ,title , i}) => {
 
 const About = () => {
 
+  const trigRef = useRef(null);
+
   useEffect(() => {
 
-    let tQ = gsap.timeline({defaults: {duration: 1 , delay : 1}});
-    tQ.to('.question-mark',{y:10,repeat: -1 , yoyo: true});
+    let tQ = gsap.timeline({defaults: {duration: .5 , delay : .2}});
+    tQ.to('.question-mark',{y:10 ,repeat: -1 , yoyo: true});
 
   }, [])
   
   return (
     <div className='about'>
+      <Rocket  />
       <header className='about__header'>
         <div className='about__header--content'>
 

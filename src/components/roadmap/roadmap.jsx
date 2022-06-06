@@ -1,7 +1,6 @@
-import React,{useRef , useLayoutEffect ,useEffect} from 'react';
+import React,{useRef , useLayoutEffect} from 'react';
 import {Back , gsap} from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-// import { Back } from 'gsap';
 
 import PaintRoadmapTimeLine from '../paint-roadmap/paint-roadmap'; 
 import './roadmap.styles.scss';
@@ -15,9 +14,9 @@ const RoadmapCard = ({i , name , forwardedRef}) => {
   
   useLayoutEffect(() => { 
     let el = forwardedRef.current;
-    // console.log(el ,  name);
+    
     let t2 = gsap.timeline({
-      defaults:{duration: .8 , ease: Back.easeOut.config(2) , opacity:0 , autoAlpha: 0},
+      defaults:{duration: .9 , ease: Back.easeOut.config(2) , opacity:0 },
       scrollTrigger: {
         trigger: el ,
         // start:'center top',
@@ -32,8 +31,8 @@ const RoadmapCard = ({i , name , forwardedRef}) => {
 
   
     t2.from(`.${name}-card.roadmap__card`, {delay: i  , scale: .2 , transformOrigin: 'center'}, "=.2")
-    .from(`.${name}-card .roadmap__card--main`, {scaleX :0 , transformOrigin: 'left'}, "-=.1")
-    .from(`.${name}-card .roadmap__card--after`, {scaleY: 0 , transformOrigin: 'top'},"=.2" )
+    .from(`.${name}-card .roadmap__card--main`, {scaleX :0 , transformOrigin: 'left'}, "=.2")
+    .from(`.${name}-card .roadmap__card--after`, {scaleY: 0 , transformOrigin: 'top'},"=.4" )
 
 
 

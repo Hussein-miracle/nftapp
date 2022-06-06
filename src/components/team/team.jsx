@@ -1,4 +1,5 @@
 import React from 'react';
+import Tilt from 'react-parallax-tilt';
 import './team.styles.scss';
 
 import img1 from '../../assets/images/team-image-1.png';
@@ -23,10 +24,22 @@ const Team = () => {
       <h1 className='team__title'>Team</h1>
       
       <div className='team__content'>
+        <Tilt tiltReverse={true}>
         <TeamCard  imgUrl={img1} name="Itachi" role='creator'/>
+        </Tilt>
+        <Tilt>
         <TeamCard  imgUrl={img2} name="Hiroshi" role='creator'/>
+        </Tilt>
+        <Tilt tiltReverse={true}>
         <TeamCard  imgUrl={img3} name="Naruto" role='creator'/>
+        </Tilt>
+        <Tilt>
         <TeamCard  imgUrl={img4} name="Kuroko" role='creator'/>
+        </Tilt>
+       
+        
+        
+        
       </div>
     </div>
   )

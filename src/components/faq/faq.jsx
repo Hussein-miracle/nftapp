@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './faq.styles.scss';
 import { ReactComponent as  PlusBtn} from '../../assets/icons/plus.svg';
 
+
 const FaqItem = ({title}) => {
+  const [clicked , setClicked] = useState(false);
+  setTimeout(() => {
+    setClicked(false);
+  },750)
   return (
-    <li className='faq__contents--item'>
+    <li className='faq__contents--item' style={{
+      '--animated' : clicked ? 'bounceIn' : ''
+    }}  onClick={() => setClicked(true)}>
       <h3 className='faq__contents--item__title'>{title}</h3>
       <button className='faq__contents--item-btn'>
         <PlusBtn/>

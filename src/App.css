@@ -42,5 +42,120 @@ background-image: linear-gradient(
   hsl(274deg 82% 18%) 78%,
   hsl(278deg 50% 3%) 100%
 );
+
+cursor: url('./assets/icons/flashdark.svg') , 'pointer';
 }
+
+.follow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 5rem;
+  height: 5rem;
+
+  pointer-events: none;
+  z-index: 500;
+
+  color: rgba(55, 8, 92, 0.25);
+  stroke: rgba(109, 0, 194, 0.25);
+}
+
+.flash-dark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 3rem;
+  height: 3rem;
+
+  pointer-events: none;
+  z-index: 550;
+
+  fill: gold;
+
+  transition:  cubic-bezier(0.64, 0, 0.78, 0);
+}
+
+.flash-light{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 5rem;
+  height:5rem;
+
+  pointer-events: none;
+  z-index: 550;
+
+  fill: rgba(28, 4, 46, 0.25);
+}
+
+.rocket{
+  position: absolute;
+  top:  0;
+  left: 0;
+
+  width: 5rem;
+  height:5rem;
+
+  z-index: 550;
+
+  transition:  transform .2s linear;
+
+
+  /* animation: shake 53ms infinite ease-in;  */
+}
+.rocket__body{
+
+  fill: #8F00FF;
+  -webkit-animation: shake 53ms infinite ease-in; 
+  animation: shake 53ms infinite ease-in; 
+
+  
+}
+.rocket__tail{
+
+  fill: rgb(255, 166, 0);
+  animation: vibrate 153ms infinite ease-in;
+
+  
+}
+
+
+
+
+
+  
+  @keyframes vibrate {
+    to {
+      transform: translate(15px, 34px);
+    }
+  }
+  
+  
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+  }
+  
+@-webkit-keyframes shake { 
+      0%,100%{-webkit-transform: translateY(0);} 
+      10%, 30%, 50%, 70%, 90% {-webkit-transform: translateY(-10px);} 
+      20%, 40%, 60%, 80% {-webkit-transform: translateY(10px);} 
+  } 
+  @keyframes shake { 
+      0%, 100% {transform: translateY(0);} 
+      10%, 30%, 50%, 70%, 90% {transform: translateY(-10px);} 
+      20%, 40%, 60%, 80% {transform: translateY(10px);} 
+  } 
+
 

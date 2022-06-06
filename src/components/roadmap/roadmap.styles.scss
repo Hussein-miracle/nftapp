@@ -17,6 +17,7 @@
     height: 18rem;
     position: relative;
     opacity: 1;
+    transition: all  .3s ease;
 
     .pointer{
       // width: 15rem;
@@ -42,6 +43,7 @@
       opacity: 1;
 
       z-index: 56;
+      // transition: all  .3s ease;
   
 
     }
@@ -68,6 +70,7 @@
       padding-right: 0;
       background-color: #6D00C2;
       opacity: 1;
+      // transition: all  .3s ease;
 
       h2{
         font-size: 2rem;
