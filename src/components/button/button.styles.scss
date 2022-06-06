@@ -4,7 +4,6 @@
   text-align: center;
   border: none;
   outline: none;
-  font-size: 3rem;
 
   cursor: pointer;
   color: #fff;
@@ -21,7 +20,7 @@
   align-items: center;
 
   &:hover{
-    transform: scale(0.98);
+    transform: scale(0.95);
   }
 
   svg{

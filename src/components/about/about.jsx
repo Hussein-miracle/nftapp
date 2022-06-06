@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{useEffect} from 'react';
+import gsap from 'gsap';
 import './about.styles.scss';
 import PaintAboutTimeLine from '../paint-about/paint-about'; 
 import Button from '../button/button';
@@ -10,16 +11,16 @@ import img3 from '../../assets/images/timeline-image-3.png';
 import img4 from '../../assets/images/timeline-image-4.png';
 import img5 from '../../assets/images/timeline-image-5.png';
 
-const AboutImgContainer = ({srcUrl, title}) => {
+const AboutImgContainer = ({srcUrl, title , i}) => {
   return (
-    <div className='about__img-container'>
+    <div className={`about__img-container  about__img-container__${i}`}>
       <img className='about__img-container--img'  src={srcUrl} alt={title} title={title}/>
     </div>
   )
 }
-const AboutCard = ({text ,title}) => {
+const AboutCard = ({text ,title , i}) => {
   return (
-    <div className='about-card'>
+    <div className={`about-card  about-card__${i}`}>
       <h3 className='about-card__title'>{title}</h3>
       <p className='about-card__text'>
         {text}
@@ -29,6 +30,14 @@ const AboutCard = ({text ,title}) => {
 }
 
 const About = () => {
+
+  useEffect(() => {
+
+    let tQ = gsap.timeline({defaults: {duration: 1 , delay : 1}});
+    tQ.to('.question-mark',{y:10,repeat: -1 , yoyo: true});
+
+  }, [])
+  
   return (
     <div className='about'>
       <header className='about__header'>
@@ -57,36 +66,36 @@ const About = () => {
       <div className='about__contents'>
         <PaintAboutTimeLine/>
 
-        <section className='about__contents--wrapper'>
-          <AboutImgContainer srcUrl={img1} title="Social Mining"/>
-          <AboutCard title='Social Mining' text='Built in social mining protocols for all DeFi system.' />
+        <section className='about__contents--wrapper about__contents--wrapper__1'>
+          <AboutImgContainer srcUrl={img1} i="1" title="Social Mining"/>
+          <AboutCard i="1" title='Social Mining' text='Built in social mining protocols for all DeFi system.' />
         </section>
 
-        <section className='about__contents--wrapper'>
+        <section className='about__contents--wrapper about__contents--wrapper__2'>
 
-        <AboutCard title='DeFi-hub' text='One-stop DeFi protocol aggregator with social network.' />
+        <AboutCard i="2" title='DeFi-hub' text='One-stop DeFi protocol aggregator with social network.' />
 
-        <AboutImgContainer srcUrl={img2} title="DeFi-hub"/>
-
-        </section>
-
-        <section className='about__contents--wrapper'>
-        <AboutImgContainer srcUrl={img3} title="Trade guild"/>
-
-        <AboutCard title='Trade guild' text='Create your NFT/GameFi in 1 minute.' />
-        </section>
-
-        <section className='about__contents--wrapper'>
-
-        <AboutCard title='DAO guild' text='The first asset management DAO infrastructure for communities.' />
-        <AboutImgContainer srcUrl={img4} title="DAO guild"/>
+        <AboutImgContainer i="2" srcUrl={img2} title="DeFi-hub"/>
 
         </section>
 
-        <section className='about__contents--wrapper'>
+        <section className='about__contents--wrapper about__contents--wrapper__3'>
+        <AboutImgContainer i="3" srcUrl={img3} title="Trade guild"/>
 
-        <AboutImgContainer srcUrl={img5} title="GameFi"/>
-        <AboutCard title='GameFi' text='GameFi with creative function.' />
+        <AboutCard i="3" title='Trade guild' text='Create your NFT/GameFi in 1 minute.' />
+        </section>
+
+        <section className='about__contents--wrapper about__contents--wrapper__4'>
+
+        <AboutCard i="4" title='DAO guild' text='The first asset management DAO infrastructure for communities.' />
+        <AboutImgContainer i="4" srcUrl={img4} title="DAO guild"/>
+
+        </section>
+
+        <section className='about__contents--wrapper about__contents--wrapper__5'>
+
+        <AboutImgContainer i="5" srcUrl={img5} title="GameFi"/>
+        <AboutCard i="5" title='GameFi' text='GameFi with creative function.' />
 
         </section>
 

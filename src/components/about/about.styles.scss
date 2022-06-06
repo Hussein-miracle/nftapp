@@ -2,8 +2,12 @@
   min-height: 100vh;
   padding: 0 4rem;
 
+  background-color: rgba(10, 10, 10,0.8);
+
   &__header{
+    
     &--content{
+      padding-top: 2rem ;
       display: flex;
       width: 100%;
       &__left{
@@ -42,8 +46,8 @@
         .question-mark{
           // transition: all 2s ease;
 
-          -webkit-animation: action .25s 0s infinite  alternate;
-          animation: action .25s infinite 0s alternate;
+          // -webkit-animation: action .25s 0s infinite  alternate;
+          // animation: action .25s infinite 0s alternate;
         }
       }
     }
@@ -81,6 +85,22 @@
     &__text{
       font-size: 1.6rem;
     }
+
+    &__1{
+      transform: translateX(5%);
+    }
+    &__2{
+      transform: translateX(-5%);
+    }
+    &__3{
+      transform: translateX(5%);
+    }
+    &__4{
+      transform: translateX(-5%);
+    }
+    &__5{
+      transform: translateX(5%);
+    }
   }
 
   &__img-container{
@@ -93,13 +113,30 @@
     justify-content: center;
     align-items: center;
 
-    width: 30rem;
+    width: 29rem;
     height: 18rem;
+
+    &__1{
+      transform: translateX(20%);
+    }
+    &__2{
+      transform: translateX(-20%);
+    }
+    &__3{
+      transform: translateX(20%);
+    }
+    &__4{
+      transform: translateX(-20%);
+    }
+    &__5{
+      transform: translateX(20%);
+    }
 
     &__img{
       object-fit: cover;
       width: 100%;
       height: 100%;
+      border-radius: 6px;
     }
   }
 
@@ -140,7 +177,7 @@
             // align-self: flex-end;
             // margin-left: -13rem;
 
-            transform: translateX(10rem);
+            // transform: translateX(10rem);
           }
         }
       }

@@ -1,14 +1,68 @@
-import React from 'react';
+import React,{useRef , useLayoutEffect ,useEffect} from 'react';
+import {Back , gsap} from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+// import { Back } from 'gsap';
+
 import PaintRoadmapTimeLine from '../paint-roadmap/paint-roadmap'; 
 import './roadmap.styles.scss';
 
+import Pointer from '../../assets/icons/pointer';
 
 
 
-const RoadmapCard = ({i}) => {
+const RoadmapCard = ({i , name , forwardedRef}) => {
+  gsap.registerPlugin(ScrollTrigger);
+  
+  useLayoutEffect(() => { 
+    let el = forwardedRef.current;
+    // console.log(el ,  name);
+    let t2 = gsap.timeline({
+      defaults:{duration: .8 , ease: Back.easeOut.config(2) , opacity:0 , autoAlpha: 0},
+      scrollTrigger: {
+        trigger: el ,
+        // start:'center top',
+        end: 'bottom bottom',
+        start:'center center',
+        // start:'top center',
+        scrub:1
+      }
+  
+    });
+
+
+  
+    t2.from(`.${name}-card.roadmap__card`, {delay: i  , scale: .2 , transformOrigin: 'center'}, "=.2")
+    .from(`.${name}-card .roadmap__card--main`, {scaleX :0 , transformOrigin: 'left'}, "-=.1")
+    .from(`.${name}-card .roadmap__card--after`, {scaleY: 0 , transformOrigin: 'top'},"=.2" )
+
+
+
+    
+
+
+    
+
+
+    return () => {
+      if(!!t2){
+        t2.kill(true);
+      }
+    }
+
+  },[forwardedRef,i,name])
+
+
 
   return (
-    <div className='roadmap__card'>
+    <div className={`roadmap__card ${name}-card`} ref={forwardedRef}>
+      <Pointer className="roadmap__card--pointer"/>
+
+
+      <div className="roadmap__card--main">
+
+      </div>
+
+      <div className='roadmap__card--after'>
       <h2>{`Phase${i}`}</h2>
       <ul className='roadmap__card--items'>
 
@@ -17,22 +71,22 @@ const RoadmapCard = ({i}) => {
         <li>Social swap lunch</li>
 
       </ul>
-      
-      <div className='roadmap__card--after'></div>
+      </div>
     </div>
   )
 }
 
 const Roadmap = () => {
+  let childRef = useRef(null); 
   return (
-    <div className='roadmap'>
-      <h1 className='roadmap__title'>Roadmap</h1>
+    <div  className='roadmap'>
+      <h1 className='roadmap__title' >Roadmap</h1>
       <div className="roadmap__contents">
         <PaintRoadmapTimeLine/>
-        <RoadmapCard i={1}/>
-        <RoadmapCard i={2}/>
-        <RoadmapCard i={3}/>
-        <RoadmapCard i={4}/>
+        <RoadmapCard forwardedRef={childRef} i={1}  name="first"/>
+        <RoadmapCard forwardedRef={childRef} i={2}  name="second"/>
+        <RoadmapCard forwardedRef={childRef} i={3}  name="third"/>
+        <RoadmapCard forwardedRef={childRef} i={4}  name="fourth"/>
       </div>
     </div>
   )

@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react';
-import hoverEffect from 'hover-effect'
+import hoverEffect from 'hover-effect';
 import './header.styles.scss';
 import Button from '../button/button';
 

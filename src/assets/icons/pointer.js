@@ -7,6 +7,8 @@ const SvgComponent = (props) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
+
+    className="pointer"
   >
     <path
       stroke="#6D00C2"
