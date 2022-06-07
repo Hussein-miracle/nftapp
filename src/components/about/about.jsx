@@ -15,6 +15,7 @@ import img5 from '../../assets/images/timeline-image-5.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 const AboutImgContainer = ({srcUrl, title , i}) => {
   return (
     <div className={`about__img-container  about__img-container__${i}`}>
@@ -71,6 +72,7 @@ const About = () => {
       </header>
 
       <div className='about__contents'>
+        
         <PaintAboutTimeLine/>
 
         <section className='about__contents--wrapper about__contents--wrapper__1'>

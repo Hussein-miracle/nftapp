@@ -6,10 +6,10 @@
     font-size: 4rem;
     margin-bottom: 2rem;
   }
-  // background-color: green;
 
   &__contents{
     padding: 0rem 4rem;
+
     &--item{
       padding: 1rem 2.5rem;
       width: calc(100% - 0rem);
@@ -43,17 +43,12 @@
   }
 }
 
-.bounceIn {
-  -webkit-animation-name: bounceIn;
-  animation-name: bounceIn;
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  }
-  @-webkit-keyframes bounceIn {
+
+
+
+
+
+@-webkit-keyframes bounceIn {
   0%, 20%, 40%, 60%, 80%, 100% {
   -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -85,8 +80,10 @@
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
   }
-  }
-  @keyframes bounceIn {
+}
+
+
+@keyframes bounceIn {
   0%, 20%, 40%, 60%, 80%, 100% {
   -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -118,4 +115,60 @@
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
   }
+}
+
+
+@media screen and (max-width:17.5em) {
+  .faq{
+    color: #fff;
+    margin-bottom: 0rem;
+  
+    &__title{
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    &__contents{
+      padding: 0rem 1.8rem;
+  
+      &--item{
+        padding: .5rem;
+        width: 100%;
+        height: 4.5rem;
+        border-radius: 8px;
+        margin: .5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #242424;
+  
+  
+        animation: var(--animated) .75s linear both;
+        -webkit-animation:  var(--animated) .75s linear both;
+        &__title{
+          font-size: 1.1rem;
+        }
+  
+        &-btn{
+          cursor: pointer;
+          background-color: transparent;
+          border: none;
+          outline: none;
+  
+          &:focus{
+            outline: none;
+            border: none;
+          }
+        }
+      }
+    }
   }
+
+  .plus{
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  
+  
+}

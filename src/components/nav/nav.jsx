@@ -1,4 +1,4 @@
-import React, { useState , useContext } from 'react';
+import React, { useState } from 'react';
 import './nav.styles.scss';
 
 import { FirstMenu as FMenu , SecondMenu } from '../../assets/icons/menu.js';

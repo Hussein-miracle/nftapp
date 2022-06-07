@@ -109,6 +109,7 @@
 }
 
 .first-menu,.second-menu{
+  display: none;
   cursor: pointer;
   // width: 4rem;
   // height: 4rem;
@@ -259,10 +260,16 @@
   }
 }
 
+@media screen and (max-width:45em) {
+  .nav{
+    padding: 5px 3rem;
+  }
+}
+
 @media screen and (max-width: 43.125em) {
   .nav{
     font-size: 2.5rem;
-    padding: 5px 4rem;
+    // padding: 5px 3rem;
 
   
     &__title{
@@ -348,10 +355,13 @@
   }
 }
 
+@media screen and (max-width:40.625em) {
+  .nav{
+    padding: 0 1.8rem ;
+  }
+}
 @media screen and (max-width: 37.5em) {
   .nav{
-    padding: 5px .5rem;
-
   
     &__title{
       cursor: pointer;
@@ -438,9 +448,11 @@
 
 
 @media screen and (max-width: 37em) {
+  .first-menu,.second-menu{
+    display: block;
+  }
   .nav{
     height: 5rem;
-    padding: 5px 2rem;
     &__items, &__btns{
       display: none;
     }
@@ -449,10 +461,4 @@
 
 
 }
-@media screen and (min-width: 37em) {
-  .first-menu,.second-menu{
-    display: none;
-  }
 
-
-}

@@ -67,7 +67,7 @@ const Header = () => {
         <h2 className="header__contents--title">
         Discover and collect from the best NFT marketplace.
         </h2>
-        <p className="header__contents--text">Create trading guides, follow and trade with smarth money. Seek alpha and ave trading fees built  for millions of defi, gameFi and NFT communities.</p>
+        <p className="header__contents--text">Create trading guides, follow and trade with smart money. Seek alpha and ave trading fees built  for millions of defi, gameFi and NFT communities.</p>
 
 
 
