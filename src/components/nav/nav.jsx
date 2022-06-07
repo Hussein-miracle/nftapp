@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState , useContext } from 'react';
 import './nav.styles.scss';
+
+import { FirstMenu as FMenu , SecondMenu } from '../../assets/icons/menu.js';
 import Button from '../button/button';
 import HalfMoon from '../../assets/icons/moon.js';
 
 const Nav = () => {
   const [clicked, setClicked] = useState('false');
+
   const handleClick = () => {
     if(clicked === 'false'){
       setClicked('true');
@@ -16,6 +19,9 @@ const Nav = () => {
   return (
     <nav className='nav'>
       <h2 className='nav__title' id='home__title'>nftapp<span>&#9679;</span></h2>
+
+      {/* <FMenu /> */}
+      <SecondMenu/>
       <ul className='nav__items'>
         <li className='nav__item'>Home</li>
         <li className='nav__item'>NFT</li>

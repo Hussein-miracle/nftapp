@@ -1,6 +1,11 @@
+
+import { MenuContextProvider } from './context/menu-context';
+
 import './App.css';
+
 import Header from './components/header/header';
 import Nav from './components/nav/nav';
+import MobileNav from './components/mobile-nav/mobile-nav';
 import About from './components/about/about';
 import Roadmap from './components/roadmap/roadmap';
 import Team from './components/team/team';
@@ -13,9 +18,14 @@ import FlashLight from './assets/icons/flash-light';
 function App() {
   return (
     <div className="App">
+
       <FlashDark/>
       <FlashLight/>
-      <Nav/>
+
+      <MenuContextProvider>
+        <MobileNav/>
+        <Nav/>
+      </MenuContextProvider>
       <Header/> 
       <About/>
       <Roadmap/>
