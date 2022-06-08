@@ -3,8 +3,8 @@ import * as React from "react"
 const SvgComponent = (props) => (
   <svg
   className="paint-about-svg"
-    width={35}
-    height={1327}
+    // width={35}
+    // height={1327}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}

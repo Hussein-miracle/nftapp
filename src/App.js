@@ -1,5 +1,5 @@
 
-import { MenuContextProvider } from './context/menu-context';
+import { MenuContextProvider } from './contexts/menu-context';
 
 import './App.css';
 

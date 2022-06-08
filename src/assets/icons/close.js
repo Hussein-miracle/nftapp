@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 
-import { MenuContext } from '../../context/menu-context';
+import { MenuContext } from '../../contexts/menu-context';
 export const CloseMenu = (props) => {
   const [tapped , setTapped] = useState(false);
 

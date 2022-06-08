@@ -6,7 +6,7 @@ export const MenuContextProvider = ({children}) => {
   const [showNav , setShowNav] = useState(false);
 
   const value = {showNav,setShowNav} ; 
-  console.log(showNav , 'current showNav STATE');
+  // console.log(showNav , 'current showNav STATE');
   
   return (
     <MenuContext.Provider value={value}>

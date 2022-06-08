@@ -72,11 +72,9 @@ const PaintAboutTimeLine = () => {
         };
   },[])
   return (
-    <>
     <div ref={svgContainer} className='paint-about'>
       <AboutTimeline/>
     </div>
-    </>
   )
 }
 

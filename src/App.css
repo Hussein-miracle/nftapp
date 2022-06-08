@@ -47,6 +47,7 @@ cursor: url('./assets/icons/flashdark.svg') , 'pointer';
 }
 
 .follow{
+  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -63,6 +64,7 @@ cursor: url('./assets/icons/flashdark.svg') , 'pointer';
 }
 
 .flash-dark{
+  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -80,6 +82,7 @@ cursor: url('./assets/icons/flashdark.svg') , 'pointer';
 }
 
 .flash-light{
+  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -159,3 +162,14 @@ cursor: url('./assets/icons/flashdark.svg') , 'pointer';
   } 
 
 
+
+
+  @media screen and (max-width: 17.5em) {
+    .flash-dark,.flash-light,.follow{
+      display: none;
+    }
+    .rocket{    
+      width: 3rem;
+      height:3rem;
+    }
+  }

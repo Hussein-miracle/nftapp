@@ -1838,9 +1838,9 @@ transform: scale3d(1, 1, 1);
       &--img-container{
         position: absolute;
 
-        width: 76px;
+        width: 66px;
 
-        height: 11rem;
+        height: 9rem;
   
         margin: 0rem;
         border-radius: 6px;
@@ -1857,11 +1857,11 @@ transform: scale3d(1, 1, 1);
   
         &-1{
           top: 0rem;
-          left: 4rem;
+          left: calc(5rem + 4px);
         }
         &-2{
           top: 0rem;
-          left: 11rem;
+          left: calc(11.95rem + 4px);
         }
         &-3{
           display: none;
@@ -1870,11 +1870,11 @@ transform: scale3d(1, 1, 1);
         }
         &-4{
           top: 0rem;
-          left: 18rem;
+          left: calc(19rem + 3px);
         }
         &-5{
           top: 0rem;
-          left: -13px;
+          left: -14px;
         }
   
       }

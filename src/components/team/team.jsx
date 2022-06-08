@@ -27,13 +27,13 @@ const Team = () => {
         <Tilt tiltReverse={true}>
         <TeamCard  imgUrl={img1} name="Itachi" role='creator'/>
         </Tilt>
-        <Tilt>
+        <Tilt  tiltReverse={true}>
         <TeamCard  imgUrl={img2} name="Hiroshi" role='creator'/>
         </Tilt>
         <Tilt tiltReverse={true}>
         <TeamCard  imgUrl={img3} name="Naruto" role='creator'/>
         </Tilt>
-        <Tilt>
+        <Tilt tiltReverse={true}>
         <TeamCard  imgUrl={img4} name="Kuroko" role='creator'/>
         </Tilt>
        

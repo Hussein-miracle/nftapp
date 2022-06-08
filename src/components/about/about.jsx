@@ -1,4 +1,6 @@
 import React,{useEffect , useRef} from 'react';
+
+import { useMeasure } from "react-use";
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import './about.styles.scss';
@@ -36,7 +38,8 @@ const AboutCard = ({text ,title , i}) => {
 
 const About = () => {
 
-  const trigRef = useRef(null);
+
+  const [ref, { height }] = useMeasure();
 
   useEffect(() => {
 
@@ -46,8 +49,9 @@ const About = () => {
   }, [])
   
   return (
-    <div className='about'>
-      <Rocket  />
+    <div className='about' ref={ref}>
+  
+      <Rocket parentheight={height} />
       <header className='about__header'>
         <div className='about__header--content'>
 

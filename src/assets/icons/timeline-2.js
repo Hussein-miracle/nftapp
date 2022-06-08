@@ -3,8 +3,11 @@ import * as React from "react"
 const SvgComponent = (props) => (
   <svg
   className="roadmap-svg"
-    width={35}
-    height={1004}
+  
+    // width={35}
+
+    // height={1004}
+
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}

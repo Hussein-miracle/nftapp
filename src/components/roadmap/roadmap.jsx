@@ -16,13 +16,11 @@ const RoadmapCard = ({i , name , forwardedRef}) => {
     let el = forwardedRef.current;
     
     let t2 = gsap.timeline({
-      defaults:{duration: .9 , ease: Back.easeOut.config(2) , opacity:0 },
+      defaults:{duration: .85 , ease: Back.easeOut.config(2) , opacity:0 },
       scrollTrigger: {
         trigger: el ,
-        // start:'center top',
+        start:'top center',
         end: 'bottom bottom',
-        start:'center center',
-        // start:'top center',
         scrub:1
       }
   
@@ -30,9 +28,9 @@ const RoadmapCard = ({i , name , forwardedRef}) => {
 
 
   
-    t2.from(`.${name}-card.roadmap__card`, {delay: i  , scale: .2 , transformOrigin: 'center'}, "=.2")
-    .from(`.${name}-card .roadmap__card--main`, {scaleX :0 , transformOrigin: 'left'}, "=.2")
-    .from(`.${name}-card .roadmap__card--after`, {scaleY: 0 , transformOrigin: 'top'},"=.4" )
+    t2.from(`.${name}-card.roadmap__card`, {delay: 1  , scale: .2 , transformOrigin: 'center'}, "=.2")
+    .from(`.${name}-card .roadmap__card--main`, {scaleX :0 , transformOrigin: 'left'}, "=.1")
+    .from(`.${name}-card .roadmap__card--after`, {scaleY: 0 , transformOrigin: 'top'},"=.3" )
 
 
 
