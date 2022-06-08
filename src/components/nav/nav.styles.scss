@@ -461,4 +461,19 @@
 
 
 }
+@media screen and (max-width: 20em) {
+  .first-menu,.second-menu{
+    display: block;
+  }
+  .nav{
+    padding: 0 1.8rem ;
+    height: 5rem;
+    &__items, &__btns{
+      display: none;
+    }
+
+  }
+
+
+}
 

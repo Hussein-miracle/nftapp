@@ -52,6 +52,66 @@
 }
 
 
+@media screen and (max-width:20em) {
+  .team{
+    color: #fff;
+    margin: 1rem 0;
+    // background-color: gold;
+  
+    &__title{
+      font-size: 2rem;
+  
+    }
+  
+    &__card{
+      margin: 7px;
+      // height: 22rem;
+      // width: 25%;
+      height: 12.5rem;
+      width: 12.5rem;
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      transform-style: preserve-3d;
+      &:hover{
+        transform: perspective(1000px);
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      &--content{
+        background-color: #242424;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        // right: 0;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        height: 3rem;
+        width: 100%;
+      }
+  
+      &--name{
+        font-size: 1.25rem;
+      }
+  
+      &--role{
+        font-size: .9rem;
+      }
+    }
+  
+    &__content{
+      margin: .5rem 0 0 0;
+      padding: 0 1.8rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
 @media screen and (max-width:17.5em) {
   .team{
     color: #fff;

@@ -164,6 +164,15 @@ cursor: url('./assets/icons/flashdark.svg') , 'pointer';
 
 
 
+  @media screen and (max-width: 20em) {
+    .flash-dark,.flash-light,.follow{
+      display: none;
+    }
+    .rocket{    
+      width: 3.5rem;
+      height:3.5rem;
+    }
+  }
   @media screen and (max-width: 17.5em) {
     .flash-dark,.flash-light,.follow{
       display: none;

@@ -49,6 +49,66 @@
 }
 
 
+@media screen and (max-width: 20em) {
+  .footer{
+    color: #fff;
+    background-color: rgb(10, 10, 10);
+    height: 5rem;
+    padding: 0 1.8rem;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .twitter-icon , .discord-icon{
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    &__title{
+      font-size: 2rem;
+      position: relative;
+  
+      a,a:focus,a:visited,a:active{
+        text-decoration: none;
+        color:#fff;
+      }
+      span{
+        color: #6D00C2;
+        font-size: 1.2rem;
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+      }
+    }
+  
+    &__btns{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    &__btn{
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      margin: 0 .5rem;
+  
+  
+      &:focus{
+        border: none;
+        outline: none;
+      }
+  
+    }
+    
+  }
+
+  .telegram{
+    width: 2rem;
+    height: 2rem;
+  }
+}
 @media screen and (max-width: 17.5em) {
   .footer{
     color: #fff;

@@ -24,6 +24,37 @@
 
 
 
+@media screen and (max-width: 20em){
+  .paint-roadmap{
+    position:absolute;
+    top: -8px;
+    left: -15px;
+    transform: translateX(0%);
+    height: 100%;
+    overflow :hidden;
+  
+    .roadmap-svg{      // width: 2rem;
+      // height: 100%;
+      .path1{
+        width: 2rem;
+        stroke: green;
+      }
+      .path2{
+        // width: 1rem !important;
+        // height: 1rem !important;
+        stroke-width: .5rem !important;
+        transform: translateX(2px);
+        // stroke: red !important;
+      }
+      .path3{
+        // width: 2rem;
+        stroke-width: 1.5rem !important;
+        // stroke: yellow !important;
+        
+      }
+    }
+  }
+}
 @media screen and (max-width: 17.5em){
   .paint-roadmap{
     position:absolute;
