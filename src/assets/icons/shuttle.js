@@ -131,7 +131,7 @@ const Rocket = (props) => {
 
 
   useEffect(()=>{
-    window.addEventListener('mouseover',()=>{
+    rocketRef.current.addEventListener('mouseover',()=>{
       if(audioTag?.current){
         if(play){
           audioTag.current.play();
@@ -142,17 +142,7 @@ const Rocket = (props) => {
 
       return;
     })
-    // window.addEventListener('mouseout',()=>{
-    //   if(audioTag?.current){
-    //     if(play){
-    //       audioTag.current.play();
-    //     }else{
-    //       audioTag.current.pause();
-    //     }
-    //   }
 
-    //   return;
-    // })
 
   },[play])  
 

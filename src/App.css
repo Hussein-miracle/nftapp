@@ -2,9 +2,10 @@
   padding-top: 6rem;
   position: relative;
   text-align: center;
-  background: linear-gradient(rgb(33, 4, 56), rgba(109, 0, 194, 0.25), rgba(109, 0, 194, 0.1));
+  
+  /* background: linear-gradient(rgb(33, 4, 56), rgba(109, 0, 194, 0.25), rgba(109, 0, 194, 0.1));
 
-  background: linear-gradient(359.93deg, #6d00c200 -0.42%, #6e00c240 49.04%, #6d00c21a 100.61%);
+  background: linear-gradient(359.93deg, #6d00c200 -0.42%, #6e00c240 49.04%, #6d00c21a 100.61%); */
 
 
   /* /* background-image: */
@@ -17,7 +18,7 @@
 /* Opera 11.1 - 12 */
 /* background-image:
   -o-linear-gradient(left, red, #f06d06);  */
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
   180deg,
   hsl(270deg 43% 3%) 0%,
   hsl(274deg 82% 18%) 22%,
@@ -28,9 +29,9 @@
   hsl(274deg 83% 25%) 67%,
   hsl(274deg 82% 18%) 78%,
   hsl(278deg 50% 3%) 100%
-);
+); */
 
-background-image: linear-gradient(
+/* background-image: linear-gradient(
   180deg,
   hsl(270deg 43% 3%) 0%,
   hsl(274deg 82% 18%) 22%,
@@ -41,9 +42,11 @@ background-image: linear-gradient(
   hsl(274deg 83% 25%) 67%,
   hsl(274deg 82% 18%) 78%,
   hsl(278deg 50% 3%) 100%
-);
+); */
 
 cursor: url('./assets/icons/flashdark.svg') , 'pointer';
+
+background-color: hsl(270deg 43% 3%);
 }
 
 .follow{
@@ -70,8 +73,8 @@ cursor: url('./assets/icons/flashdark.svg') , 'pointer';
   left: 0;
   right: 0;
   bottom: 0;
-  width: 3rem;
-  height: 3rem;
+  width: 30px;
+  height: 30px;
 
   pointer-events: none;
   z-index: 550;
@@ -87,8 +90,8 @@ cursor: url('./assets/icons/flashdark.svg') , 'pointer';
   top: 0;
   left: 0;
 
-  width: 5rem;
-  height:5rem;
+  width: 32px;
+  height:32px;
 
   pointer-events: none;
   z-index: 550;

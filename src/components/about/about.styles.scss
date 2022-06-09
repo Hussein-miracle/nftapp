@@ -1,12 +1,17 @@
 .about{
   position: relative;
 
-  padding: 0 4rem;
+
 
   background-color: rgba(10, 10, 10,0.8);
+  background-image: linear-gradient(
+    180deg,
+    hsl(270deg 43% 3%) 0%,
+    hsl(270deg 83% 3%) 22%,
+    hsl(270deg 83% 3%) 100%);
 
   &__header{
-    
+    padding: 0 4rem;
     &--content{
       padding-top: 2rem ;
       display: flex;
@@ -142,6 +147,19 @@
   }
 
   &__contents{
+    padding: 0 4rem;
+    background-image: linear-gradient(
+  180deg,
+  hsl(270deg 43% 3%) 0%,
+  hsl(274deg 82% 18%) 22%,
+  hsl(274deg 83% 25%) 33%,
+  hsl(274deg 83% 30%) 42%,
+  hsl(274deg 83% 35%) 50%,
+  hsl(274deg 83% 30%) 58%,
+  hsl(274deg 83% 25%) 67%,
+  hsl(274deg 82% 18%) 78%,
+  hsl(278deg 50% 3%) 100%
+);
     position: relative;
     // height: 245vh;
     width: 100%;
@@ -226,9 +244,14 @@
   .about{
     position: relative;
   
-    padding: 0 4rem;
+    
   
     background-color: rgba(10, 10, 10,0.8);
+    background-image: linear-gradient(
+      180deg,
+      hsl(270deg 43% 3%) 0%,
+      hsl(270deg 83% 3%) 22%,
+      hsl(270deg 83% 3%) 100%);
   
     &__header{
       
@@ -368,6 +391,19 @@
     }
   
     &__contents{
+      background-image: linear-gradient(
+        180deg,
+        hsl(270deg 43% 3%) 0%,
+        hsl(274deg 82% 18%) 22%,
+        hsl(274deg 83% 25%) 33%,
+        hsl(274deg 83% 30%) 42%,
+        hsl(274deg 83% 35%) 50%,
+        hsl(274deg 83% 30%) 58%,
+        hsl(274deg 83% 25%) 67%,
+        hsl(274deg 82% 18%) 78%,
+        hsl(278deg 50% 3%) 100%
+      );
+      padding: 0 4rem;
       position: relative;
       // height: 245vh;
       width: 100%;
@@ -421,9 +457,14 @@
   .about{
     position: relative;
   
-    padding: 0 4rem;
+    
   
     background-color: rgba(10, 10, 10,0.8);
+    background-image: linear-gradient(
+      180deg,
+      hsl(270deg 43% 3%) 0%,
+      hsl(270deg 83% 3%) 22%,
+      hsl(270deg 83% 3%) 100%);
   
     &__header{
       
@@ -563,10 +604,22 @@
     }
   
     &__contents{
+      padding: 0 4rem;
       position: relative;
       // height: 245vh;
       width: 100%;
-  
+      background-image: linear-gradient(
+        180deg,
+        hsl(270deg 43% 3%) 0%,
+        hsl(274deg 82% 18%) 22%,
+        hsl(274deg 83% 25%) 33%,
+        hsl(274deg 83% 30%) 42%,
+        hsl(274deg 83% 35%) 50%,
+        hsl(274deg 83% 30%) 58%,
+        hsl(274deg 83% 25%) 67%,
+        hsl(274deg 82% 18%) 78%,
+        hsl(278deg 50% 3%) 100%
+      );
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -615,9 +668,14 @@
 @media screen and (max-width: 33.75em) {
   .about{
     position: relative;
-    padding: 0 1.8rem;
+
   
     background-color: rgba(10, 10, 10,0.8);
+    background-image: linear-gradient(
+      180deg,
+      hsl(270deg 43% 3%) 0%,
+      hsl(270deg 83% 3%) 22%,
+      hsl(270deg 83% 3%) 100%);
   
     &__header{
       
@@ -761,6 +819,7 @@
     }
   
     &__contents{
+      padding: 0 1.8rem;
       padding-bottom: 1rem;
       position: relative;
       width: 100%;
@@ -769,7 +828,18 @@
       flex-direction: column;
       align-items: center;
       gap: 1rem;
-  
+      background-image: linear-gradient(
+        180deg,
+        hsl(270deg 43% 3%) 0%,
+        hsl(274deg 82% 18%) 22%,
+        hsl(274deg 83% 25%) 33%,
+        hsl(274deg 83% 30%) 42%,
+        hsl(274deg 83% 35%) 50%,
+        hsl(274deg 83% 30%) 58%,
+        hsl(274deg 83% 25%) 67%,
+        hsl(274deg 82% 18%) 78%,
+        hsl(278deg 50% 3%) 100%
+      );
   
       &--wrapper{
         display: flex;
@@ -821,7 +891,12 @@
 @media screen and (max-width: 26.25em) {
   .about{
     position: relative;
-    padding: 0 1.8rem;
+
+    background-image: linear-gradient(
+      180deg,
+      hsl(270deg 43% 3%) 0%,
+      hsl(270deg 83% 3%) 22%,
+      hsl(270deg 83% 3%) 100%);
   
     background-color: rgba(10, 10, 10,0.8);
   
@@ -967,10 +1042,22 @@
     }
   
     &__contents{
+      padding: 0 1.8rem;
       padding-bottom: 1rem;
       position: relative;
       width: 100%;
-  
+      background-image: linear-gradient(
+        180deg,
+        hsl(270deg 43% 3%) 0%,
+        hsl(274deg 82% 18%) 22%,
+        hsl(274deg 83% 25%) 33%,
+        hsl(274deg 83% 30%) 42%,
+        hsl(274deg 83% 35%) 50%,
+        hsl(274deg 83% 30%) 58%,
+        hsl(274deg 83% 25%) 67%,
+        hsl(274deg 82% 18%) 78%,
+        hsl(278deg 50% 3%) 100%
+      );
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1027,9 +1114,13 @@
 @media screen and (max-width: 23.75em) {
   .about{
     position: relative;
-    padding: 0 1.8rem;
-  
+
     background-color: rgba(10, 10, 10,0.8);
+    background-image: linear-gradient(
+      180deg,
+      hsl(270deg 43% 3%) 0%,
+      hsl(270deg 83% 3%) 22%,
+      hsl(270deg 83% 3%) 100%);
   
     &__header{
       
@@ -1173,6 +1264,20 @@
     }
   
     &__contents{
+      padding: 0 1.8rem;
+  
+      background-image: linear-gradient(
+        180deg,
+        hsl(270deg 43% 3%) 0%,
+        hsl(274deg 82% 18%) 22%,
+        hsl(274deg 83% 25%) 33%,
+        hsl(274deg 83% 30%) 42%,
+        hsl(274deg 83% 35%) 50%,
+        hsl(274deg 83% 30%) 58%,
+        hsl(274deg 83% 25%) 67%,
+        hsl(274deg 82% 18%) 78%,
+        hsl(278deg 50% 3%) 100%
+      );
       padding-bottom: 1rem;
       position: relative;
       width: 100%;
@@ -1233,8 +1338,12 @@
 @media screen and (max-width: 22.5em) {
   .about{
     position: relative;
-    padding: 0 1.8rem;
-  
+
+    background-image: linear-gradient(
+      180deg,
+      hsl(270deg 43% 3%) 0%,
+      hsl(270deg 83% 3%) 22%,
+      hsl(270deg 83% 3%) 100%);
     background-color: rgba(10, 10, 10,0.8);
   
     &__header{
@@ -1379,6 +1488,19 @@
     }
   
     &__contents{
+      padding: 0 1.8rem;
+      background-image: linear-gradient(
+        180deg,
+        hsl(270deg 43% 3%) 0%,
+        hsl(274deg 82% 18%) 22%,
+        hsl(274deg 83% 25%) 33%,
+        hsl(274deg 83% 30%) 42%,
+        hsl(274deg 83% 35%) 50%,
+        hsl(274deg 83% 30%) 58%,
+        hsl(274deg 83% 25%) 67%,
+        hsl(274deg 82% 18%) 78%,
+        hsl(278deg 50% 3%) 100%
+      );
       padding-bottom: 1rem;
       position: relative;
       width: 100%;
@@ -1439,9 +1561,14 @@
 @media screen and (max-width: 20em) {
   .about{
     position: relative;
-    padding: 0 1.8rem;
+
   
     background-color: rgba(10, 10, 10,0.8);
+    background-image: linear-gradient(
+      180deg,
+      hsl(270deg 43% 3%) 0%,
+      hsl(270deg 83% 3%) 22%,
+      hsl(270deg 83% 3%) 100%);
   
     &__header{
       
@@ -1585,10 +1712,22 @@
     }
   
     &__contents{
+      padding: 0 1.8rem;
       padding-bottom: 1rem;
       position: relative;
       width: 100%;
-  
+      background-image: linear-gradient(
+        180deg,
+        hsl(270deg 43% 3%) 0%,
+        hsl(274deg 82% 18%) 22%,
+        hsl(274deg 83% 25%) 33%,
+        hsl(274deg 83% 30%) 42%,
+        hsl(274deg 83% 35%) 50%,
+        hsl(274deg 83% 30%) 58%,
+        hsl(274deg 83% 25%) 67%,
+        hsl(274deg 82% 18%) 78%,
+        hsl(278deg 50% 3%) 100%
+      );
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1645,9 +1784,14 @@
 @media screen and (max-width: 17.5em) {
   .about{
     position: relative;
-    padding: 0 1.8rem;
+
   
     background-color: rgba(10, 10, 10,0.8);
+    background-image: linear-gradient(
+      180deg,
+      hsl(270deg 43% 3%) 0%,
+      hsl(270deg 83% 3%) 22%,
+      hsl(270deg 83% 3%) 100%);
   
     &__header{
       
@@ -1791,10 +1935,22 @@
     }
   
     &__contents{
+      padding: 0 1.8rem;
       padding-bottom: 1rem;
       position: relative;
       width: 100%;
-  
+      background-image: linear-gradient(
+        180deg,
+        hsl(270deg 43% 3%) 0%,
+        hsl(274deg 82% 18%) 22%,
+        hsl(274deg 83% 25%) 33%,
+        hsl(274deg 83% 30%) 42%,
+        hsl(274deg 83% 35%) 50%,
+        hsl(274deg 83% 30%) 58%,
+        hsl(274deg 83% 25%) 67%,
+        hsl(274deg 82% 18%) 78%,
+        hsl(278deg 50% 3%) 100%
+      );
       display: flex;
       flex-direction: column;
       align-items: center;

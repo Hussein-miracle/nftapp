@@ -1,7 +1,13 @@
 .header{
   min-height: 100vh;
   padding: 0 4rem ;
+  margin-bottom: 3rem;
   display: flex;
+  background-image: linear-gradient(
+    180deg,
+    hsl(270deg 43% 3%) 0%,
+    hsl(274deg 82% 18%) 22%,
+    hsl(270deg 83% 3%) 100%);
   
   z-index: -5 ;
   &__contents{
