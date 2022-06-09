@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Rocket = (props) => {
 
-  const   [sound , setSound] = useState(sound1);
+  const   [sound , setSound] = useState(sound2);
   const   [up , setUp] = useState(false);
   const [play , setPlay] = useState(false);
   
@@ -70,7 +70,7 @@ const Rocket = (props) => {
     {x:GetX(25), y:  GetY(795) ,r : up ? 45 : 90},
     {x:GetX(75), y   :  GetY(945) ,r : up ? 45 : 90},
     {x:GetX(45) , y :  GetY(1220) ,r : up ? 35 : 100},
-    {x:GetX(40), y :  GetY(height - 30) ,r :up ? 10 : 45}
+    {x:GetX(40), y :  GetY(height) ,r :up ? 10 : 45}
   ];
 
   useEffect(() => {

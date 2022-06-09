@@ -22,7 +22,60 @@
   }
 }
 
-
+@media screen and (max-width:50em) {
+  .paint-roadmap{
+    // height: 100% !important;
+    height: 100%;
+    width: 5rem;
+    position:absolute;
+    top: 0rem;
+    right:0%;
+    transform: translateX(0%);
+  
+    height: 100%;
+    overflow :hidden;
+  
+    .roadmap-svg{
+      // width: 100%;
+      // height: 100% !important;
+    }
+  
+  
+  
+    svg{
+      // width: auto;
+      height: 100%;
+    }
+  }
+  
+}
+@media screen and (max-width:37.5em) {
+  .paint-roadmap{
+    // height: 100% !important;
+    height: 100%;
+    width: 5rem;
+    position:absolute;
+    top: 0rem;
+    right:0%;
+    transform: translateX(0%);
+  
+    height: 100%;
+    overflow :hidden;
+  
+    .roadmap-svg{
+      // width: 100%;
+      // height: 100% !important;
+    }
+  
+  
+  
+    svg{
+      // width: auto;
+      height: 100%;
+    }
+  }
+  
+}
 
 @media screen and (max-width: 33.75em){
   .paint-roadmap{

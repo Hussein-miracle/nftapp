@@ -14,7 +14,40 @@
   }
 }
 
-
+@media screen and (max-width:50em) {
+  .paint-about{
+    height: 100%;
+    position:absolute;
+    top: -1rem;
+    left:95%;
+    transform: translateX(-5%);
+    width:5rem;
+    height: 100%;
+    overflow :hidden;
+  
+    svg{
+      // width: auto;
+      height: 100%;
+    }
+  }
+}
+@media screen and (max-width:37.5em) {
+  .paint-about{
+    height: 100%;
+    position:absolute;
+    top: -1rem;
+    left:95%;
+    transform: translateX(-25%);
+    width:5rem;
+    height: 100%;
+    overflow :hidden;
+  
+    svg{
+      // width: auto;
+      height: 100%;
+    }
+  }
+}
 @media screen and (max-width: 33.75em){
   .paint-about{
     position:absolute;
