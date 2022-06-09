@@ -164,7 +164,7 @@ cursor: url('./assets/icons/flashdark.svg') , 'pointer';
 
 
 
-  @media screen and (max-width: 20em) {
+  @media screen and (max-width: 37em) {
     .flash-dark,.flash-light,.follow{
       display: none;
     }

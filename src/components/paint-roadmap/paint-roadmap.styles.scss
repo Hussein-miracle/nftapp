@@ -5,7 +5,7 @@
   top: 0rem;
   right:0%;
   transform: translateX(0%);
-  width:100%;
+
   height: 100%;
   overflow :hidden;
 
@@ -24,6 +24,130 @@
 
 
 
+@media screen and (max-width: 33.75em){
+  .paint-roadmap{
+    position:absolute;
+    top: -8px;
+    left: -3rem;
+    transform: translateX(0%);
+    height: 100%;
+    overflow :hidden;
+  
+    .roadmap-svg{      // width: 2rem;
+      // height: 100%;
+      .path1{
+        width: 2rem;
+        stroke: green;
+      }
+      .path2{
+        // width: 1rem !important;
+        // height: 1rem !important;
+        stroke-width: .5rem !important;
+        transform: translateX(2px);
+        // stroke: red !important;
+      }
+      .path3{
+        // width: 2rem;
+        stroke-width: 1.5rem !important;
+        // stroke: yellow !important;
+        
+      }
+    }
+  }
+}
+@media screen and (max-width: 26.25em){
+  .paint-roadmap{
+    position:absolute;
+    top: -8px;
+    left: -15px;
+    transform: translateX(0%);
+    height: 100%;
+    overflow :hidden;
+  
+    .roadmap-svg{      // width: 2rem;
+      // height: 100%;
+      .path1{
+        width: 2rem;
+        stroke: green;
+      }
+      .path2{
+        // width: 1rem !important;
+        // height: 1rem !important;
+        stroke-width: .5rem !important;
+        transform: translateX(2px);
+        // stroke: red !important;
+      }
+      .path3{
+        // width: 2rem;
+        stroke-width: 1.5rem !important;
+        // stroke: yellow !important;
+        
+      }
+    }
+  }
+}
+@media screen and (max-width: 23.75em){
+  .paint-roadmap{
+    position:absolute;
+    top: -8px;
+    left: -15px;
+    transform: translateX(0%);
+    height: 100%;
+    overflow :hidden;
+  
+    .roadmap-svg{      // width: 2rem;
+      // height: 100%;
+      .path1{
+        width: 2rem;
+        stroke: green;
+      }
+      .path2{
+        // width: 1rem !important;
+        // height: 1rem !important;
+        stroke-width: .5rem !important;
+        transform: translateX(2px);
+        // stroke: red !important;
+      }
+      .path3{
+        // width: 2rem;
+        stroke-width: 1.5rem !important;
+        // stroke: yellow !important;
+        
+      }
+    }
+  }
+}
+@media screen and (max-width: 22.5em){
+  .paint-roadmap{
+    position:absolute;
+    top: -8px;
+    left: -15px;
+    transform: translateX(0%);
+    height: 100%;
+    overflow :hidden;
+  
+    .roadmap-svg{      // width: 2rem;
+      // height: 100%;
+      .path1{
+        width: 2rem;
+        stroke: green;
+      }
+      .path2{
+        // width: 1rem !important;
+        // height: 1rem !important;
+        stroke-width: .5rem !important;
+        transform: translateX(2px);
+        // stroke: red !important;
+      }
+      .path3{
+        // width: 2rem;
+        stroke-width: 1.5rem !important;
+        // stroke: yellow !important;
+        
+      }
+    }
+  }
+}
 @media screen and (max-width: 20em){
   .paint-roadmap{
     position:absolute;
@@ -59,7 +183,6 @@
   .paint-roadmap{
     position:absolute;
     top: -8px;
-    left: 92%;
     transform: translateX(0%);
     height: 100%;
     overflow :hidden;

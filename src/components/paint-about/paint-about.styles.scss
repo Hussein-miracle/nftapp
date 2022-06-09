@@ -15,6 +15,97 @@
 }
 
 
+@media screen and (max-width: 33.75em){
+  .paint-about{
+    position:absolute;
+    top: 4rem;
+    left: -26px;
+    transform: translateX(0%);
+    height: 100%;
+    overflow :hidden;
+  
+    .paint-about-svg{      // width: 2rem;
+      // height: 100%;
+      .path-1{
+        width: 2rem;
+        stroke: gold;
+      }
+      .path-2{
+        // width: 1rem !important;
+        // height: 1rem !important;
+        stroke-width: .5rem !important;
+        transform: translateX(2px);
+      }
+      .path-3{
+        // width: 1rem !important;
+        // height: 1rem !important;
+        stroke-width: 1.5rem !important;
+        
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 26.25em){
+  .paint-about{
+    position:absolute;
+    top: 4rem;
+    left: -16px;
+    transform: translateX(0%);
+    height: 100%;
+    overflow :hidden;
+  
+    .paint-about-svg{      // width: 2rem;
+      // height: 100%;
+      .path-1{
+        width: 2rem;
+        stroke: gold;
+      }
+      .path-2{
+        // width: 1rem !important;
+        // height: 1rem !important;
+        stroke-width: .5rem !important;
+        transform: translateX(2px);
+      }
+      .path-3{
+        // width: 1rem !important;
+        // height: 1rem !important;
+        stroke-width: 1.5rem !important;
+        
+      }
+    }
+  }
+}
+@media screen and (max-width: 22.5em){
+  .paint-about{
+    position:absolute;
+    top: 4rem;
+    left: -16px;
+    transform: translateX(0%);
+    height: 100%;
+    overflow :hidden;
+  
+    .paint-about-svg{      // width: 2rem;
+      // height: 100%;
+      .path-1{
+        width: 2rem;
+        stroke: gold;
+      }
+      .path-2{
+        // width: 1rem !important;
+        // height: 1rem !important;
+        stroke-width: .5rem !important;
+        transform: translateX(2px);
+      }
+      .path-3{
+        // width: 1rem !important;
+        // height: 1rem !important;
+        stroke-width: 1.5rem !important;
+        
+      }
+    }
+  }
+}
 @media screen and (max-width: 20em){
   .paint-about{
     position:absolute;
